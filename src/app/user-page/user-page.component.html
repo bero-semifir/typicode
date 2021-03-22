@@ -1,0 +1,11 @@
+<div *ngFor="let user of users">
+    <!-- [property binding] changer les propriètées du HTML-->
+    <app-user [user]='user'></app-user>
+</div>
+
+<!-- (event binding) appelle une fonction à la levée d'un evenement -->
+<!-- <div *ngIf="poulet" (click)="changePoulet()">Poulet</div>
+
+<button (click)="changePoulet()" [disabled]='poulet'>Changer Poulet</button> -->
+
+<!-- <app-user-form></app-user-form> -->
