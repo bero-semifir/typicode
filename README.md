@@ -1,27 +1,24 @@
-# Placeholder
+# Exo Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+## Enoncé
 
-## Development server
+Afficher la liste des articles de **[https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)** avec routing vers la page /articles.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Cette page doit afficher un court résumé de l'article avec le nom de l'auteur (attention au piège) et le titre de l'article.
 
-## Code scaffolding
+## Bonus
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Afficher les commentaires de l'article (et leurs auteurs).
 
-## Build
+## Carte blanche
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Utilisation des pipes, le style, typage fort.
 
-## Running unit tests
+## Lancer le projet
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Avec npm d'installé, installer les dépendances:
+> npm install
 
-## Running end-to-end tests
+Pour servir l'appli angular en mode dev:
+> ng serve
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
