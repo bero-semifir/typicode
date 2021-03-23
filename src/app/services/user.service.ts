@@ -21,6 +21,15 @@ export class UserService {
     return this.http.get<User[]>(this.route)
   }
 
+  /**
+   * Récupére un utilisateur en fonction d'un id donné
+   * @param id id de l'utilisateur
+   */
+  getUser(id: number): Observable<User>{
+    // return this.http.get<User>(this.route + '/' + id);
+    return this.http.get<User>(`${this.route}/${id}`);
+  }
+
   postUser(user: User){
     return this.http.post(this.route,user)
   }

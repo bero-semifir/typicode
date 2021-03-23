@@ -20,9 +20,6 @@ export class UserPageComponent implements OnInit {
       (users: User[]) => {
         this.users = users;
         console.log(users);
-      },
-      (err: any) => {
-        console.error(err);
       });
   }
 

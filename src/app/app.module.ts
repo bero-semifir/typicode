@@ -7,14 +7,13 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './commons/header/header.component';
+import { FooterComponent } from './commons/footer/footer.component';
 import { UserPageComponent } from './user-page/user-page.component';
 import { UserComponent } from './user-page/user/user.component';
 import { UserFormComponent } from './user-page/user-form/user-form.component';
-import { ArticlesPageComponent } from './articles-page/articles-page.component';
-import { ArticlePreviewComponent } from './articles-page/article-preview/article-preview.component';
-import { ArticleComponent } from './articles-page/article/article.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
+import { ArticlePreviewComponent } from './article-page/article-preview/article-preview.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +23,9 @@ import { ArticleComponent } from './articles-page/article/article.component';
     UserPageComponent,
     UserComponent,
     UserFormComponent,
-    ArticlesPageComponent,
+    ArticlePageComponent,
     ArticlePreviewComponent,
-    ArticleComponent
+
   ],
   imports: [
     BrowserModule,

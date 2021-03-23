@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserPageComponent } from './user-page/user-page.component';
-import { ArticlesPageComponent } from './articles-page/articles-page.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
 
 const routes: Routes = [
-  {path:'', component: ArticlesPageComponent, pathMatch: 'full'},
+  {path:'', component: ArticlePageComponent, pathMatch: 'full'},
   {path:'users', component: UserPageComponent, pathMatch: 'full'},
 ];
 

@@ -1,0 +1,5 @@
+<div>
+    <h3 class="article-title">{{article.title | titlecase}}</h3>
+    <p *ngIf="article.author">Écrit par {{article.author.username}}</p>
+    <p class="article-body">{{article.body | slice:0:50}}...</p>
+</div>
