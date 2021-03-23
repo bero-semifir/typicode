@@ -21,6 +21,10 @@ export class UserService {
     return this.http.get<User[]>(this.route)
   }
 
+  getUser(id: number): Observable<User> {
+    return this.http.get<User>(`${this.route}/${id}`)
+  }
+
   postUser(user: User){
     return this.http.post(this.route,user)
   }

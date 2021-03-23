@@ -1,0 +1,7 @@
+<div class="card" [routerLink]="'articles/'+ article.id">
+    <div class="container">
+        <p class="title">{{article.title}}</p>
+        <p *ngIf="article.author">Écrit par {{article.author.username}}</p>
+        <p>{{article.body | slice:0:20}}</p>
+    </div>
+</div> 
