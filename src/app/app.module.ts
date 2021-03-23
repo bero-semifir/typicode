@@ -14,6 +14,7 @@ import { UserComponent } from './user-page/user/user.component';
 import { UserFormComponent } from './user-page/user-form/user-form.component';
 import { ArticlePageComponent } from './article-page/article-page.component';
 import { ArticlePreviewComponent } from './article-page/article-preview/article-preview.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ArticlePreviewComponent } from './article-page/article-preview/article-
     UserFormComponent,
     ArticlePageComponent,
     ArticlePreviewComponent,
+    ArticleComponent,
 
   ],
   imports: [

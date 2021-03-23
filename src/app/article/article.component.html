@@ -1,0 +1,19 @@
+<div *ngIf="article">
+    <h2>{{article.title}}</h2>
+    
+    <div>
+        <p *ngIf="article.author">Écrit par {{article.author.username}}</p>
+    </div>
+    
+    <div>
+        {{article.body}}
+    </div>
+    
+    <!-- Commentaires -->
+    <div>
+        <!-- insérer le composant pour les commentaires de l'article -->
+    </div>
+</div>
+<div *ngIf="!article">
+    Chargement...
+</div>

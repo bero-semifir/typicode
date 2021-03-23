@@ -22,23 +22,35 @@ export class ArticleService {
    */
   getArticles(): Observable<Article[]> {
     // récupére la liste des articles
-    let obs =  this.http.get<Article[]>(this.route)
-    // modification des articles présent dans l'observable
-      .pipe(map((articles: Article[]) => {
-        // mapping sur chacun des articles
-        articles.forEach((article: Article) => this.mapAuthor(article));
-        return articles;
-      }));
+    let obs = this.http.get<Article[]>(this.route)
+      // // modification des articles présent dans l'observable
+      // .pipe(map((articles: Article[]) => {
+      //   // mapping sur chacun des articles
+      //   articles.forEach((article: Article) => this.mapAuthor(article));
+      //   return articles;
+      // }));
     console.log(obs);
     return obs;
+  }
+
+  /**
+   * Récupére un article en fonction de son id
+   * @param id id de l'article
+   */
+  getArticle(id: number): Observable<Article> {
+    return this.http.get<Article>(`${this.route}/${id}`)
+      .pipe(map((article: Article) => {
+        this.mapAuthor(article)
+        return article;
+      }))
   }
 
   /**
    * Associe un User en tant qu'auteur d'un article
    * @param article article a mapper
    */
-  mapAuthor(article: Article){
+  mapAuthor(article: Article) {
     this.userApi.getUser(article.userId)
-          .subscribe((user: User) => article.author = user);
+      .subscribe((user: User) => article.author = user);
   }
 }
